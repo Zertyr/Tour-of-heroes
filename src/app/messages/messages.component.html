@@ -1,6 +1,8 @@
 <div *ngIf="messageService.messages.length" class="card">
 
     <h2>Messages</h2>
+    <p>Pas de base de données distante, l'application sera reset au rechargement de l'application.</p>
+
     <button class="clear"
             (click)="messageService.clear()">Clear messages</button>
     <div *ngFor='let message of messageService.messages'> {{message}} </div>
